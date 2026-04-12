@@ -2,15 +2,19 @@
 
 # === Taps ===
 tap "homebrew/cask"
-tap "homebrew/cask-versions"   # if needed for betas
+tap "homebrew/cask-versions"   
 
 # === CLI Tools / Formulas ===
 brew "git"
-brew "gh"                      # GitHub CLI
+brew "gh"                      
 brew "docker"
 brew "yt-dlp"
 brew "ffmpeg"
-brew "ollama"                  # for local LLMs
+brew "ollama"
+brew "pipx"
+brew "neovim"
+brew "nvm"
+
 
 # === GUI Apps (Casks) ===
 cask "google-chrome"
@@ -21,14 +25,25 @@ cask "notion"
 cask "obsidian"
 cask "raycast"
 cask "pearcleaner"
-cask "bruno"                   # API client (Postman alternative)
+cask "bruno"                   
 cask "itsycal"
-cask "stats"                   # menu bar system monitor
+cask "stats"
+cask "dockdoor" 
+cask "docker-desktop" 
 cask "linearmouse"
 cask "shottr"
 cask "hazeover"
 cask "hyperkey"
+cask "raindropio"
+cask "microsoft-outlook"
+cask "microsoft-teams"
+cask "numi"
+cask "google-drive"
 cask "karabiner-elements"
+cask "datagrip"                  
+cask "tableplus"
+cask "monitorcontrol"         
+cask "thaw"
 
 # === Apps that may need manual download / other sources ===
 # - Claude Desktop → usually from claude.ai (not on brew)
