@@ -5,3 +5,6 @@ Install Homebrew
 ``` bash
 brew bundle install
 ```
+# hazeover
+https://hazeover.com/github-students.html
+
