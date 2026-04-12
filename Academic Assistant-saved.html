@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Overview | Effective Workplace Writing</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'academic-primary': '#1a2a3a', // Deep Blue
+                        'academic-accent': '#0d9488',  // Teal
+                        'academic-soft': '#f8fafc',    // Off-white
+                        'academic-card': '#ffffff',
+                        'academic-border': '#e2e8f0',
+                        'academic-text': '#334155',
+                    },
+                    fontFamily: {
+                        display: ['Montserrat', 'sans-serif'],
+                        body: ['Inter', 'sans-serif'],
+                    },
+                },
+            },
+        }
+    </script>
+
+    <style>
+        body {
+            background-color: #f1f5f9;
+            color: #334155;
+            font-family: 'Inter', sans-serif;
+            line-height: 1.7;
+        }
+
+        .glass-header {
+            background: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(12px);
+            border-bottom: 1px solid rgba(226, 232, 240, 0.8);
+        }
+
+        .section-container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 4rem 1.5rem;
+        }
+
+        .concept-card {
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            border: 1px solid #e2e8f0;
+        }
+
+        .concept-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 12px 24px -10px rgba(0, 0, 0, 0.08);
+            border-color: #0d9488;
+        }
+
+        .wiki-link {
+            color: #0d9488;
+            text-decoration: underline;
+            text-underline-offset: 4px;
+            font-weight: 600;
+            transition: opacity 0.2s;
+        }
+
+        .wiki-link:hover {
+            opacity: 0.7;
+        }
+
+        .prose-custom strong {
+            color: #0d9488;
+            font-weight: 700;
+        }
+
+        .bullet-list li {
+            position: relative;
+            padding-left: 1.5rem;
+            margin-bottom: 0.75rem;
+        }
+
+        .bullet-list li::before {
+            content: "•";
+            color: #0d9488;
+            position: absolute;
+            left: 0;
+            font-weight: bold;
+        }
+
+        .gradient-heading {
+            background: linear-gradient(135deg, #1a2a3a 0%, #0d9488 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Header -->
+    <header class="fixed top-0 w-full z-50 glass-header">
+        <div class="max-width-900 mx-auto px-6 py-4 flex justify-between items-center">
+            <h1 class="font-display font-extrabold text-xl tracking-tight text-academic-primary">
+                CC1X08 <span class="text-academic-accent">EWW</span>
+            </h1>
+            <nav class="hidden md:flex space-x-6 text-sm font-medium">
+                <a href="#summary" class="hover:text-academic-accent transition">Summary</a>
+                <a href="#notes" class="hover:text-academic-accent transition">Course Notes</a>
+                <a href="#wiki" class="hover:text-academic-accent transition">Concept Wiki</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="pt-20">
+        
+        <!-- Hero Title Section -->
+        <section class="bg-academic-soft border-b border-academic-border">
+            <div class="section-container text-center py-16">
+                <span class="inline-block px-3 py-1 mb-4 text-xs font-bold tracking-widest text-academic-accent uppercase bg-teal-50 rounded-full">Academic Resource</span>
+                <h2 class="font-display text-4xl md:text-5xl font-extrabold text-academic-primary mb-6">
+                    Effective Writing for the Workplace
+                </h2>
+                <p class="text-lg text-slate-500 max-w-2xl mx-auto leading-relaxed">
+                    Structured course notes and conceptual frameworks for professional communication in the modern era.
+                </p>
+            </div>
+        </section>
+
+        <!-- Executive Summary -->
+        <section id="summary" class="bg-white">
+            <div class="section-container">
+                <div class="flex items-center gap-4 mb-8">
+                    <div class="h-8 w-1 bg-academic-accent rounded-full"></div>
+                    <h2 class="font-display text-2xl font-bold text-academic-primary uppercase tracking-wide">Executive Summary</h2>
+                </div>
+                <div class="prose-custom text-academic-text space-y-6 text-lg">
+                    <p>Effective workplace writing integrates clear organization, audience awareness, and analytical rigor, increasingly supported by responsible AI use. The CC1X08 Effective Writing for the Workplace (EWW) course materials emphasize these competencies through practical frameworks, situating coursework within the context of the United Nations Sustainable Development Goals (SDGs) to bridge foundational communication theory with real-world, impact-driven professional scenarios.</p>
+                    <p>The curriculum covers the entire writing process, starting with understanding the Purpose, Audience, and Context (PAC) of a document and applying the 5Cs of communication for clarity and professionalism. It progresses through structural strategies like the LATCH method for information organization and effective use of headings. A significant focus is placed on enhancing reports with appropriate visual aids and utilizing structured analytical frameworks, such as SWOT and PESTLE, to move from analysis to critical evaluation and persuasion.</p>
+                    <p>The course also addresses the modern reality of AI in the workplace, teaching students to craft well-engineered prompts using the CRAFT framework for research and drafting. Concurrently, it reinforces strict guidelines on academic integrity, including avoiding plagiarism, accurately citing sources using the Harvard referencing system, and properly declaring AI tool usage through mandatory documentation.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Media Grid (Using provided URLs) -->
+        <section class="bg-slate-100 py-12">
+            <div class="max-w-6xl mx-auto px-6 grid grid-cols-2 md:grid-cols-4 gap-4">
+                <img src="https://opal.google/board/blobs/e341cebf-9d62-4af9-80d9-fb3239e8eb9e" alt="Course Resource 1" class="rounded-xl shadow-sm hover:scale-105 transition-transform duration-500 bg-white p-2">
+                <img src="https://opal.google/board/blobs/c1fb306f-28d9-4706-925e-3c5b5b49beb6" alt="Course Resource 2" class="rounded-xl shadow-sm hover:scale-105 transition-transform duration-500 bg-white p-2">
+                <img src="https://opal.google/board/blobs/f8bc45da-0be0-4bde-9570-4c223fec0360" alt="Course Resource 3" class="rounded-xl shadow-sm hover:scale-105 transition-transform duration-500 bg-white p-2">
+                <img src="https://opal.google/board/blobs/02d422fb-20a8-412b-93d5-95dfe293c9f6" alt="Course Resource 4" class="rounded-xl shadow-sm hover:scale-105 transition-transform duration-500 bg-white p-2">
+            </div>
+        </section>
+
+        <!-- Structured Course Notes -->
+        <section id="notes" class="bg-academic-soft">
+            <div class="section-container">
+                <div class="flex items-center gap-4 mb-12">
+                    <div class="h-8 w-1 bg-academic-accent rounded-full"></div>
+                    <h2 class="font-display text-2xl font-bold text-academic-primary uppercase tracking-wide">Structured Course Notes</h2>
+                </div>
+
+                <div class="space-y-16 prose-custom">
+                    
+                    <!-- 1. Foundations -->
+                    <div class="bg-white p-8 rounded-3xl shadow-sm border border-slate-200">
+                        <h3 class="text-xl font-bold text-academic-primary mb-6 flex items-center gap-3">
+                            <span class="flex items-center justify-center w-8 h-8 rounded-lg bg-teal-50 text-academic-accent text-sm">1</span>
+                            Foundations of Workplace Writing
+                        </h3>
+                        <ul class="bullet-list ml-4">
+                            <li><strong>PAC Principle</strong>: The bedrock of written communication, influencing content, structure, and language.
+                                <ul class="ml-6 mt-2 opacity-80 space-y-1 text-sm list-disc">
+                                    <li><strong>Purpose</strong>: Objectives/aims (e.g., to explain, propose, instruct).</li>
+                                    <li><strong>Audience</strong>: Intended readers (e.g., decision-makers, project partners).</li>
+                                    <li><strong>Context</strong>: The situation or background information that builds meaning.</li>
+                                </ul>
+                            </li>
+                            <li><strong>The 5Cs of Communication</strong>: A checklist for effective writing: Complete, Concise, Clear, Courteous, and Correct.</li>
+                            <li><strong>Types of Written Communication</strong>: Project Proposals, Technical Reports, Emails, Memos & Letters.</li>
+                        </ul>
+                    </div>
+
+                    <!-- 2. Structuring -->
+                    <div class="bg-white p-8 rounded-3xl shadow-sm border border-slate-200">
+                        <h3 class="text-xl font-bold text-academic-primary mb-6 flex items-center gap-3">
+                            <span class="flex items-center justify-center w-8 h-8 rounded-lg bg-teal-50 text-academic-accent text-sm">2</span>
+                            Structuring and Organizing Content
+                        </h3>
+                        <ul class="bullet-list ml-4">
+                            <li><strong>LATCH Method</strong>: A strategy for finite information organization: Location, Alphabet, Time, Category, and Hierarchy.</li>
+                            <li><strong>Headings and Sub-headings</strong>: Use Noun Phrases, Questions, or Statements. Must be <strong>Concrete</strong>, <strong>Concise</strong>, and <strong>Consistent</strong>.</li>
+                        </ul>
+                    </div>
+
+                    <!-- 3. Visuals -->
+                    <div class="bg-white p-8 rounded-3xl shadow-sm border border-slate-200">
+                        <h3 class="text-xl font-bold text-academic-primary mb-6 flex items-center gap-3">
+                            <span class="flex items-center justify-center w-8 h-8 rounded-lg bg-teal-50 text-academic-accent text-sm">3</span>
+                            Utilizing Visuals in Communication
+                        </h3>
+                        <p class="mb-4 text-sm font-medium text-slate-500 uppercase tracking-wider">Formatting Rules:</p>
+                        <ul class="bullet-list ml-4">
+                            <li>Captions go <strong>above</strong> for tables.</li>
+                            <li>Captions go <strong>below</strong> for all other figures.</li>
+                            <li>Always refer to visuals within the body text.</li>
+                        </ul>
+                    </div>
+
+                    <!-- 4. Analysis -->
+                    <div class="bg-white p-8 rounded-3xl shadow-sm border border-slate-200">
+                        <h3 class="text-xl font-bold text-academic-primary mb-6 flex items-center gap-3">
+                            <span class="flex items-center justify-center w-8 h-8 rounded-lg bg-teal-50 text-academic-accent text-sm">4</span>
+                            Analysis, Evaluation, and Persuasion
+                        </h3>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-4">
+                            <div class="p-4 bg-slate-50 rounded-xl border border-slate-100">
+                                <p class="font-bold text-academic-accent mb-2">SWOT Analysis</p>
+                                <p class="text-sm">Evaluates Internal (Strengths, Weaknesses) and External (Opportunities, Threats) factors.</p>
+                            </div>
+                            <div class="p-4 bg-slate-50 rounded-xl border border-slate-100">
+                                <p class="font-bold text-academic-accent mb-2">PESTLE Analysis</p>
+                                <p class="text-sm">Evaluates macro-environmental factors: Political, Economic, Socio-cultural, Technological, Legal, and Environmental.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 5. AI -->
+                    <div class="bg-academic-primary p-8 rounded-3xl shadow-xl text-white">
+                        <h3 class="text-xl font-bold mb-6 flex items-center gap-3">
+                            <span class="flex items-center justify-center w-8 h-8 rounded-lg bg-academic-accent text-white text-sm">5</span>
+                            Artificial Intelligence & Academic Integrity
+                        </h3>
+                        <p class="mb-6 opacity-90">The <strong>CRAFT Framework</strong> for AI Prompts:</p>
+                        <div class="grid grid-cols-5 gap-2 text-center mb-8">
+                            <div class="p-2 bg-white/10 rounded-lg">
+                                <p class="text-xs opacity-60">C</p>
+                                <p class="font-bold text-academic-accent">Context</p>
+                            </div>
+                            <div class="p-2 bg-white/10 rounded-lg">
+                                <p class="text-xs opacity-60">R</p>
+                                <p class="font-bold text-academic-accent">Role</p>
+                            </div>
+                            <div class="p-2 bg-white/10 rounded-lg">
+                                <p class="text-xs opacity-60">A</p>
+                                <p class="font-bold text-academic-accent">Audience</p>
+                            </div>
+                            <div class="p-2 bg-white/10 rounded-lg">
+                                <p class="text-xs opacity-60">F</p>
+                                <p class="font-bold text-academic-accent">Format</p>
+                            </div>
+                            <div class="p-2 bg-white/10 rounded-lg">
+                                <p class="text-xs opacity-60">T</p>
+                                <p class="font-bold text-academic-accent">Tone</p>
+                            </div>
+                        </div>
+                        <p class="text-sm border-l-2 border-academic-accent pl-4 italic opacity-80">
+                            AI tools are aids, not replacements. Always submit a mandatory AI Declaration Form.
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Concept Wiki -->
+        <section id="wiki" class="bg-white pb-24">
+            <div class="section-container">
+                <div class="flex items-center gap-4 mb-12">
+                    <div class="h-8 w-1 bg-academic-accent rounded-full"></div>
+                    <h2 class="font-display text-2xl font-bold text-academic-primary uppercase tracking-wide">Concept Wiki & Interconnections</h2>
+                </div>
+
+                <div id="wiki-grid" class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <!-- Cards will be populated by JS for parsing functionality -->
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <script>
+        const wikiData = [
+            { name: "5Cs of Communication", text: "A checklist for effective workplace writing, requiring documents to be Complete, Concise, Clear, Courteous, and Correct. It serves as a quality control measure for content developed under the [[PAC Principle]]." },
+            { name: "AI Declaration Form", text: "A mandatory document for the CA2 assignment, requiring students to transparently disclose their use of AI tools, enforcing academic integrity and preventing [[Plagiarism]]." },
+            { name: "Analysing", text: "The process of examining individual elements of a subject to understand their interrelationships, serving as a factual basis for discussion or interpretation. It utilizes tools like [[SWOT Analysis]] and [[PESTLE Analysis]] and precedes [[Evaluating]]." },
+            { name: "CRAFT Framework", text: "An acronym for Context, Role, Audience, Format, and Tone, detailing the essential elements of a well-engineered AI prompt. It helps generate accurate AI responses without replacing human critical thinking or leading to [[Plagiarism]]." },
+            { name: "Evaluating", text: "The concluding stage of analysis, involving evidence-based judgments about quality or effectiveness, often leading to recommendations. It builds upon [[Analysing]] and heavily relies on [[Persuasive Techniques]]." },
+            { name: "Headings and Sub-headings", text: "Formatting elements used to logically organize content, visually convey hierarchy, and briefly describe subsequent text. They should be structured cohesively according to the [[LATCH Method]]." },
+            { name: "LATCH Method", text: "A framework for organizing information based on Location, Alphabet, Time, Category, and Hierarchy, created by [[Richard Saul Wurman]]. It provides structural logic for deploying [[Headings and Sub-headings]] in reports." },
+            { name: "PAC Principle", text: "An acronym for Purpose, Audience, and Context, forming the foundation for determining the content, organization, and language of any written communication. It works in tandem with the [[5Cs of Communication]]." },
+            { name: "Persuasive Techniques", text: "Rhetorical strategies used to convince a reader, including establishing credibility, adopting an authoritative tone, and employing repetition. These are crucial in report conclusions to strengthen the impact of [[Evaluating]]." },
+            { name: "PESTLE Analysis", text: "A strategic tool for evaluating external macro-environmental factors: Political, Economic, Socio-cultural, Technological, Legal, and Environmental. It is often used with the external components (Opportunities and Threats) of a [[SWOT Analysis]]." },
+            { name: "Plagiarism", text: "The academic offense of presenting another's work or ideas as one's own without proper acknowledgment. It is avoided through proper citation, paraphrasing, and truthful use of the [[AI Declaration Form]]." },
+            { name: "Richard Saul Wurman", text: "Creator of the TED conference and an information architect, credited with developing the [[LATCH Method]], theorizing that all finite information organization falls into five categories." },
+            { name: "Sustainable Development Goals (SDGs)", text: "Global objectives set by the United Nations to address social, economic, and environmental challenges, serving as the core thematic focus and context for student research and reports." },
+            { name: "SWOT Analysis", text: "A strategic framework for evaluating internal Strengths and Weaknesses, and external Opportunities and Threats. It is a primary tool for [[Analysing]] and is paired with [[PESTLE Analysis]]." },
+            { name: "Visuals", text: "Non-textual communication elements like maps, graphs, tables, and infographics used to summarize data and clarify relationships. They must be appropriately labeled and integrated into the text to support both [[Analysing]] and [[Evaluating]]." }
+        ];
+
+        function parseInterconnections(text) {
+            return text.replace(/\[\[(.*?)\]\]/g, (match, p1) => {
+                return `<a href="#wiki" class="wiki-link">${p1}</a>`;
+            });
+        }
+
+        const wikiGrid = document.getElementById('wiki-grid');
+
+        wikiData.forEach(entry => {
+            const card = document.createElement('div');
+            card.className = 'concept-card bg-academic-card p-6 rounded-2xl flex flex-col justify-between';
+            
+            // Splitting content for definition/context/connections logic
+            // In the provided data, everything is in one string. 
+            // We will render it as a cohesive block as instructed while highlighting links.
+            
+            card.innerHTML = `
+                <div>
+                    <h3 class="text-lg font-bold text-academic-primary mb-3">${entry.name}</h3>
+                    <div class="text-sm text-slate-600 leading-relaxed space-y-3">
+                        <p>${parseInterconnections(entry.text)}</p>
+                    </div>
+                </div>
+                <div class="mt-4 pt-4 border-t border-slate-100 flex justify-between items-center">
+                    <span class="text-[10px] font-bold uppercase tracking-widest text-slate-400">Concept Entry</span>
+                    <div class="h-2 w-2 rounded-full bg-academic-accent"></div>
+                </div>
+            `;
+            wikiGrid.appendChild(card);
+        });
+    </script>
+</body>
+</html>
