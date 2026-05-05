@@ -4,6 +4,34 @@
 # Path to your Oh My Zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
 
+export NVM_DIR="$HOME/.nvm"
+  [ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && \\. "/opt/homebrew/opt/nvm/nvm.sh"  # This loads nvm
+  [ -s "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm" ] && \\. "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
+
+bw() {
+  if [ "$#" -eq 0 ]; then
+    command bw
+  elif [ "$#" -eq 1 ]; then
+    # Search by site name only
+    command bw list items --search "$1" | jq '.[] | {name: .name, id: .id, user: .login.username, pass: .login.password}'
+  else
+    # Search by site name ($1) AND filter by username ($2)
+    command bw list items --search "$1" | jq --arg user "$2" '.[] | select(.login.username | contains($user)) | {name: .name, id: .id, user: .login.username, pass: .login.password}'
+  fi
+}
+
+
+# Created by `pipx` on 2026-04-26 05:01:13
+export PATH="$PATH:/Users/nr/.local/bin"
+
+# bun completions
+[ -s "/Users/nr/.bun/_bun" ] && source "/Users/nr/.bun/_bun"
+
+# bun
+export BUN_INSTALL="$HOME/.bun"
+export PATH="$BUN_INSTALL/bin:$PATH"
+
+
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time Oh My Zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
